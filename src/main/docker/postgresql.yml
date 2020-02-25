@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipstermonjeuapp-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/JhipsterMonjeuApp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=JhipsterMonjeuApp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
