@@ -1,0 +1,31 @@
+entity Joueur{
+id Integer
+nom String
+steamId String 
+}
+
+entity Setting{
+s1 Integer
+s2 Integer
+s3 Integer
+s4 Integer
+s5 Integer
+}
+
+entity Personne {
+ id Integer
+ nom String
+ prenom String
+ age Integer
+}
+entity Adresse {
+voi String
+numero Integer
+ville String
+cp String
+}
+
+relationship OneToOne{
+Personne{adresse} to Adresse
+Joueur{setting} to Setting
+}
